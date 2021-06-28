@@ -1,5 +1,5 @@
 import React from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //include images into your bundle
 //import rigoImage from "../../img/rigo-baby.jpg";
@@ -11,9 +11,12 @@ const Home = () => {
 			<h2>CONTACT LIST</h2>
 			<div className="container">
 				<div className="row justify-content-end">
-					<button type="button" className="btn btn-success">
+					<Link
+						to="/create"
+						type="button"
+						className="btn btn-success">
 						Add new contact
-					</button>
+					</Link>
 				</div>
 				<div>
 					<h3>The List</h3>

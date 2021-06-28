@@ -1,9 +1,10 @@
 import React from "react";
+import Form from "../component/form";
 
 const Create = () => {
 	return (
 		<div className="container">
-			<h1>Formulario</h1>
+			<Form />
 		</div>
 	);
 };

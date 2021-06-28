@@ -1,7 +1,8 @@
 import React from "react";
 import Home from "./views/home";
 import Create from "./views/create";
-import { BrowserRouter, Route, Switch, render } from "react-router-dom";
+import Form from "./component/form";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const App = () => {
 	return (
