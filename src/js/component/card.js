@@ -4,10 +4,12 @@ const Card = () => {
 	return (
 		<div className="mt-2">
 			<div className="container">
-				<div className="card mb-3" style="max-width: 540px;">
+				<div className="card mb-3">
 					<div className="row no-gutters">
-						<div className="col-md-4">
-							<img src="..." alt="..."></img>
+						<div className="col-md-4 img-profile rounded-circle">
+							<img
+								src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/08/fotos-perfil-whatsapp_16.jpg?itok=fl2H3Opv"
+								alt="..."></img>
 						</div>
 						<div className="col-md-8">
 							<div className="card-body">
