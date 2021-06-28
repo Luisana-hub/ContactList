@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Form = () => {
+const Formulario = () => {
 	return (
 		<div className="container">
 			<form>
@@ -10,15 +10,15 @@ const Form = () => {
 					<input
 						type="text"
 						className="form-control"
-						id="formGroupExampleInput"
+						id="formGroupExampleInput2"
 						placeholder="Full Name"></input>
 				</div>
 				<div className="form-group">
-					<label for="formGroupExampleInput">Email</label>
+					<label for="inputEmail4">Email</label>
 					<input
 						type="email"
 						className="form-control"
-						id="formGroupExampleInput2"
+						id="inputEmail4"
 						placeholder="Enter email"></input>
 				</div>
 				<div className="form-group">
@@ -46,4 +46,4 @@ const Form = () => {
 	);
 };
 
-export default Form;
+export default Formulario;

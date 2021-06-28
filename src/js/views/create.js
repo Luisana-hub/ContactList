@@ -1,10 +1,10 @@
 import React from "react";
-import Form from "../component/form";
+import Formulario from "../component/formulario";
 
 const Create = () => {
 	return (
 		<div className="container">
-			<Form />
+			<Formulario />
 		</div>
 	);
 };
