@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 const Card = props => {
 	const { store, actions } = useContext(Context);
@@ -36,14 +37,16 @@ const Card = props => {
 						<div className="col-md-3 edit">
 							<div className="row mt-4">
 								<div className="col-4">
-									<button>
-										<img
-											src="https://w7.pngwing.com/pngs/740/67/png-transparent-computer-icons-icon-design-edit-angle-computer-data-thumbnail.png"
-											style={{
-												width: "20px",
-												height: "20px"
-											}}></img>
-									</button>
+									<Link to="/edition">
+										<button>
+											<img
+												src="https://w7.pngwing.com/pngs/740/67/png-transparent-computer-icons-icon-design-edit-angle-computer-data-thumbnail.png"
+												style={{
+													width: "20px",
+													height: "20px"
+												}}></img>
+										</button>
+									</Link>
 								</div>
 								<div className="col-4 delete">
 									<button

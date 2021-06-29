@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./views/home";
 import Create from "./views/create";
+import Edit from "./views/edit";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import injectContext from "./store/appContext";
 
@@ -12,6 +13,9 @@ const App = () => {
 					<Switch>
 						<Route exact path="/create">
 							<Create />
+						</Route>
+						<Route exact path="/edition">
+							<Edit />
 						</Route>
 						<Route exact path="/">
 							<Home />
