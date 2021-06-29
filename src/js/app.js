@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./views/home";
 import Create from "./views/create";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import injectContext from "./store/appContext";
 
 const App = () => {
 	return (
@@ -23,4 +24,4 @@ const App = () => {
 	);
 };
 
-export default App;
+export default injectContext(App);
