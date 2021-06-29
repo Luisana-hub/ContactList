@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Card from "../component/card";
 import { Context } from "../store/appContext";
+import getState from "../store/flux";
 
 //include images into your bundle
 //import rigoImage from "../../img/rigo-baby.jpg";
@@ -12,7 +13,8 @@ const Home = () => {
 	useEffect(() => {
 		actions.fetchListContact();
 	}, []);
-
+	// eslint-disable-next-line no-console
+	console.log(store.listContact, "muestra agenda");
 	return (
 		<div className="mt-5">
 			<div className="row justify-content-center">
@@ -33,7 +35,6 @@ const Home = () => {
 					<div key={item.id}>
 						<Card
 							title={item.full_name}
-							id={item.id}
 							address={item.address}
 							phone={item.phone}
 							email={item.email}

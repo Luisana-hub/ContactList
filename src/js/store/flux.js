@@ -2,10 +2,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			listContact: [],
-			//planets: [],
-			//vehiculos: [],
-			//favoritos: [],
-			//favorito: " ",
 			id: " "
 		},
 		actions: {
@@ -14,7 +10,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					"https://assets.breatheco.de/apis/fake/contact/agenda/agenda_monalisa"
 				)
 					.then(response => response.json())
-					.then(data => setStore({ listContact: data.results }))
+					.then(data => setStore({ listContact: data })) // eslint-disable-next-line no-console
 					.catch(error => console.log(error));
 			}
 		}

@@ -25,9 +25,9 @@ const Card = props => {
 						<div className="col-md-6">
 							<div className="card-body">
 								<h5 className="FullName">{props.title}</h5>
-								<p className="Address">Address</p>
-								<p className="Phone">Phone</p>
-								<p className="Email">Email</p>
+								<p className="Address">{props.address}</p>
+								<p className="Phone">{props.phone}</p>
+								<p className="Email">{props.email}</p>
 							</div>
 						</div>
 						<div className="col-md-3">
