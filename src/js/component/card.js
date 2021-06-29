@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
+import { Context } from "../store/appContext";
 
 const Card = props => {
+	const { store, actions } = useContext(Context);
+
 	return (
 		<div className="mt-2">
 			<div className="container">
@@ -30,7 +33,7 @@ const Card = props => {
 								<p className="Email">{props.email}</p>
 							</div>
 						</div>
-						<div className="col-md-3">
+						<div className="col-md-3 edit">
 							<div className="row mt-4">
 								<div className="col-4">
 									<button>
@@ -42,8 +45,11 @@ const Card = props => {
 											}}></img>
 									</button>
 								</div>
-								<div className="col-4">
-									<button>
+								<div className="col-4 delete">
+									<button
+										onClick={() =>
+											actions.fetchDeleteContact(props.id)
+										}>
 										<img
 											src="https://image.flaticon.com/icons/png/512/2907/2907762.png"
 											style={{
@@ -68,5 +74,6 @@ Card.propTypes = {
 	id: PropTypes.any,
 	address: PropTypes.any,
 	phone: PropTypes.any,
-	email: PropTypes.any
+	email: PropTypes.any,
+	actions: PropTypes.object
 };

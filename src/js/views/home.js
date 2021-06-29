@@ -38,6 +38,7 @@ const Home = () => {
 							address={item.address}
 							phone={item.phone}
 							email={item.email}
+							id={item.id}
 						/>
 					</div>
 				))}
