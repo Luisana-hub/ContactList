@@ -60,6 +60,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					method: "PUT",
 					headers: { "Content-type": "application/json" },
 					body: JSON.stringify({
+						id: id,
 						full_name: fullName,
 						email: email,
 						agenda_slug: "agenda_monalisa",

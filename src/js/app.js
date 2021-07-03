@@ -11,11 +11,11 @@ const App = () => {
 			<BrowserRouter>
 				<div>
 					<Switch>
+						<Route exact path="/edition/:id">
+							<Edit />
+						</Route>
 						<Route exact path="/create">
 							<Create />
-						</Route>
-						<Route exact path="/edition">
-							<Edit />
 						</Route>
 						<Route exact path="/">
 							<Home />

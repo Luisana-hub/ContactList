@@ -1,9 +1,12 @@
 import React, { useState, useContext } from "react";
 //import Formulario from "../component/formulario";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 const Edit = () => {
+	const { id } = useParams();
+	// eslint-disable-next-line no-console
+	console.log(id);
 	const { store, actions } = useContext(Context);
 	const [fullName, setFullName] = useState("");
 	const [email, setEmail] = useState("");
@@ -78,7 +81,7 @@ const Edit = () => {
 								type="submit"
 								className="btn btn-primary form-control"
 								onClick={() => {
-									actions.fetchEditContact(
+									actions.fechtEditContact(
 										id,
 										fullName,
 										email,

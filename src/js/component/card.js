@@ -37,7 +37,7 @@ const Card = props => {
 						<div className="col-md-3 edit">
 							<div className="row mt-4">
 								<div className="col-4">
-									<Link to="/edition">
+									<Link to={`/edition/${props.id}`}>
 										<button>
 											<img
 												src="https://w7.pngwing.com/pngs/740/67/png-transparent-computer-icons-icon-design-edit-angle-computer-data-thumbnail.png"
