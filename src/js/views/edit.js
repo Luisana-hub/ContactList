@@ -1,6 +1,7 @@
-import React from "react";
-import Formulario from "../component/formulario";
+import React, { useState, useContext } from "react";
+//import Formulario from "../component/formulario";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 const Edit = () => {
 	const { store, actions } = useContext(Context);
