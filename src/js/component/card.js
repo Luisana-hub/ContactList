@@ -3,6 +3,7 @@ import React, { useContext, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
+import { FaRegEdit, FaRegTrashAlt } from "react-icons/fa";
 
 const Card = props => {
 	const { store, actions } = useContext(Context);
@@ -39,12 +40,7 @@ const Card = props => {
 								<div className="col-4">
 									<Link to={`/edition/${props.id}`}>
 										<button>
-											<img
-												src="https://w7.pngwing.com/pngs/740/67/png-transparent-computer-icons-icon-design-edit-angle-computer-data-thumbnail.png"
-												style={{
-													width: "20px",
-													height: "20px"
-												}}></img>
+											<FaRegEdit />
 										</button>
 									</Link>
 								</div>
@@ -53,12 +49,7 @@ const Card = props => {
 										onClick={() =>
 											actions.fetchDeleteContact(props.id)
 										}>
-										<img
-											src="https://image.flaticon.com/icons/png/512/2907/2907762.png"
-											style={{
-												width: "20px",
-												height: "20px"
-											}}></img>
+										<FaRegTrashAlt />
 									</button>
 								</div>
 							</div>
